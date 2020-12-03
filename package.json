@@ -1,6 +1,6 @@
 {
   "name": "text-audio-pt-br",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "leitor de texto ",
   "main": "src/index.js",
   "author": "Jusan Magno",
