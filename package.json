@@ -1,0 +1,11 @@
+{
+  "name": "text-to-audio-pt-br",
+  "version": "1.0.0",
+  "description": "leitor de texto ",
+  "main": "src/index.js",
+  "author": "Jusan Magno",
+  "license": "MIT",
+  "dependencies": {
+    "text-to-mp3": "^1.0.4"
+  }
+}
