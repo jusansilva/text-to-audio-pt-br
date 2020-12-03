@@ -6,7 +6,7 @@
 
 ## Install 
 
-#### npm install text-to-audio-pt-br --save
+#### npm install text-audio-pt-br --save 
 
 ### In your code 
 
