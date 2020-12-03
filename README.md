@@ -12,7 +12,7 @@
 
 
 ```
-const speaker = require('text-to-audio');
+const speaker = require('text-audio-pt-br');
 
 speaker.read("Eu estou fazendo um teste");
 //your mp3 audio will to be in ./yourtext.mp3
