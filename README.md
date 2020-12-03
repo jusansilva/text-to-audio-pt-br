@@ -13,9 +13,10 @@
 
 ```
 const speaker = require('text-audio-pt-br');
+const text = "Eu estou fazendo um teste"; //texto a ser traduzido 
+const docName = "./myAudio" //caminho e nome do texto 
+speaker.read(text, docName);
 
-speaker.read("Eu estou fazendo um teste");
-//your mp3 audio will to be in ./yourtext.mp3
 
 ``` 
 

@@ -119,13 +119,13 @@ TextToMp3.prototype.getMp3 = function (text, callback) {
 
 };
 
-exports.read = (text) => {
+exports.read = (text, audioName) => {
     return TextToMp3.prototype.getMp3(text, function (err, binaryStream) {
         if (err) {
             console.log(err);
             return;
         }
-        let file = fs.createWriteStream("yourtext.mp3");
+        let file = fs.createWriteStream(`${audioName}.mp3`);
         file.write(binaryStream);
         file.end();
     });
