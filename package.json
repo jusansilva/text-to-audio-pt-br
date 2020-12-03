@@ -6,7 +6,6 @@
   "author": "Jusan Magno",
   "license": "MIT",
   "dependencies": {
-    "debug": "^4.3.1",
-    "text-to-mp3": "^1.0.4"
+    "debug": "^4.3.1"
   }
 }
