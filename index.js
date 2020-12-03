@@ -1,9 +1,6 @@
 let fs = require('fs'),
     request = require('request');
 
-var DEBUGNAME = __filename.slice(__dirname.length + 1, -3);
-var debug = require("debug")(DEBUGNAME);
-
 const BASE_URL = "http://translate.google.com/translate_tts?";
 var TextToMp3 = function () { }
 
@@ -70,7 +67,6 @@ TextToMp3.prototype.getMp3 = function (text, callback) {
             callback("missing required params");
         }
         var path = _parseURL(BASE_URL, text);
-        //debug("PATH", path);
         request
             .get({
                 headers: {
@@ -123,8 +119,8 @@ TextToMp3.prototype.getMp3 = function (text, callback) {
 
 };
 
-exports.read = async (text) => {
-    return await TextToMp3.prototype.getMp3(text, function (err, binaryStream) {
+exports.read = (text) => {
+    return TextToMp3.prototype.getMp3(text, function (err, binaryStream) {
         if (err) {
             console.log(err);
             return;

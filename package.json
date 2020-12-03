@@ -1,11 +1,12 @@
 {
   "name": "text-audio-pt-br",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "leitor de texto ",
   "main": "src/index.js",
   "author": "Jusan Magno",
   "license": "MIT",
   "dependencies": {
-    "debug": "^4.3.1"
+    "debug": "^4.3.1",
+    "request": "^2.88.2"
   }
 }
